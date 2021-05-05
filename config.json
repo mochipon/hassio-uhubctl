@@ -1,0 +1,27 @@
+{
+    "name": "uhubctl",
+    "version": "0.0.61",
+    "slug": "uhubctl",
+    "description": "MQTT Bridge for uhubctl - control USB power per-port on smart USB hubs",
+    "arch": [
+        "amd64",
+        "i386"
+    ],
+    "startup": "application",
+    "services": [
+        "mqtt:need"
+    ],
+    "boot": "auto",
+    "usb": true,
+    "options": {
+        "AVAILABILITY_TOPIC": "tele/uhubctl/localhost/LWT",
+        "STATUS_TOPIC": "tele/uhubctl/localhost",
+        "COMMAND_TOPIC": "cmnd/uhubctl/localhost"
+    },
+    "schema": {
+        "AVAILABILITY_TOPIC": "str",
+        "STATUS_TOPIC": "str",
+        "COMMAND_TOPIC": "str",
+        "LOG_LEVEL": "list(debug|info|warn|error|critical)?"
+    }
+}
