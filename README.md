@@ -17,11 +17,11 @@ This add-on takes advantage of the API provided by Home Assistant and is extreme
 
 ## Configuration
 
-By default, the add-on publishes telemetry data to the topic `tele/uhubctl/localhost`.
+By default, the add-on publishes telemetry data to the topic `tele/uhubctl/localhost`. Find the target hub you want to control by checking Vendor ID (`Vid`), Product ID (`Pid`), and number of ports of each hub. 
 
-   <img src="images/mqtt.png" width="300"/>
+<img src="images/mqtt.png" width="1000"/>
 
-Find the target hub you want to control by checking Vendor ID (`Vid`), Product ID (`Pid`), and number of ports of each hub. Here is an example of a yaml entry in Home Assistant to control `Port 1` of `HUB3-4`.
+Here is an example of a yaml entry in Home Assistant to control `Port 1` of `HUB3-4`.
 
 ```yaml
 switch:
