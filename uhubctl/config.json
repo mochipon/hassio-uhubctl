@@ -5,7 +5,10 @@
     "description": "MQTT Bridge for uhubctl - control USB power per-port on smart USB hubs",
     "arch": [
         "amd64",
-        "i386"
+        "i386",
+        "armhf",
+        "armv7",
+        "aarch64"
     ],
     "startup": "application",
     "services": [
